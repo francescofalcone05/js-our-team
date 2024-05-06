@@ -37,9 +37,15 @@ const ourTeam = [
 
     }
 ];
+const singleCard = document.createElement('div');
+singleCard.classList.add('card');
 
-/*MILESTONE 1:
-Stampare su console, per ogni membro del team: il nome e il ruolo.*/
+
+
+
+
+
+
 
 for (let i = 0; i < ourTeam.length; i++) {
 
@@ -47,7 +53,14 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log(membro)
 
     for (let chiave in membro){
-        console.log(membro.nome, membro.ruolo);
+
+        
+    
+        singleCard.innerHTML +=  `<img src="./img/${membro.immagine}" alt=""></img><p>Nome e cognome:${membro.nome}</p><p>Nome e cognome:${membro.ruolo}</p>`
+
     };
 
 };
+
+//<img src="./img/" alt=""></img>
+// singleCard.innerText += `<img src="./img/${membro.immagine}" alt=""></img>`

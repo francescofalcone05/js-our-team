@@ -17,8 +17,27 @@ body{
 
 
 /************* MAIN *************/
+.contenitore{
+    display: flex;
+    margin: 1rem;
+}
 
+.card{
+    width: calc(100% / 6 - 2rem);
+    text-align: center;
+    color: beige;
+    margin: 1rem;
 
+}
+
+p{
+    font-size: 2rem;
+}
+
+img{
+
+    width: 100%;
+}
 
 
 
