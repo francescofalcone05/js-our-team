@@ -37,11 +37,9 @@ const ourTeam = [
 
     }
 ];
+const container = document.getElementsByClassName('contenitore');
 const singleCard = document.createElement('div');
 singleCard.classList.add('card');
-
-
-
 
 
 
@@ -54,13 +52,15 @@ for (let i = 0; i < ourTeam.length; i++) {
 
     for (let chiave in membro){
 
-        
-    
-        singleCard.innerHTML +=  `<img src="./img/${membro.immagine}" alt=""></img><p>Nome e cognome:${membro.nome}</p><p>Nome e cognome:${membro.ruolo}</p>`
+        singleCard.innerHTML =  'ciao'
+        console.log(singleCard)
+        container.innerHTML += singleCard
+        console.log(container)
+
 
     };
 
 };
 
-//<img src="./img/" alt=""></img>
-// singleCard.innerText += `<img src="./img/${membro.immagine}" alt=""></img>`
+// singleCard.innerHTML +=  `<img src="./img/${membro.immagine}" alt=""></img><p>Nome e cognome:${membro.nome}</p><p>Nome e cognome:${membro.ruolo}</p>`
+// container.innerHTML += singleCard
