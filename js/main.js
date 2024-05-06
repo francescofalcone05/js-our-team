@@ -1,3 +1,4 @@
+
 const ourTeam = [
     {
         nome: 'Wayne Barnette',
@@ -38,8 +39,7 @@ const ourTeam = [
     }
 ];
 const container = document.getElementsByClassName('contenitore');
-const singleCard = document.createElement('div');
-singleCard.classList.add('card');
+
 
 
 
@@ -48,17 +48,18 @@ singleCard.classList.add('card');
 for (let i = 0; i < ourTeam.length; i++) {
 
     let membro = ourTeam[i]
-    console.log(membro)
+    // console.log(membro)
 
-    for (let chiave in membro){
+    //const singleCard = document.createElement('div');
+    //singleCard.classList.add('card');
 
-        singleCard.innerHTML =  'ciao'
-        console.log(singleCard)
-        container.innerHTML += singleCard
-        console.log(container)
+    //singleCard.append(`${membro}`)
+    //console.log(singleCard)
+    container.innerHTML += membro
+    console.log(container)
 
 
-    };
+
 
 };
 
