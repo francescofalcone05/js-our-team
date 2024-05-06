@@ -37,3 +37,17 @@ const ourTeam = [
 
     }
 ];
+
+/*MILESTONE 1:
+Stampare su console, per ogni membro del team: il nome e il ruolo.*/
+
+for (let i = 0; i < ourTeam.length; i++) {
+
+    let membro = ourTeam[i]
+    console.log(membro)
+
+    for (let chiave in membro){
+        console.log(membro.nome, membro.ruolo);
+    };
+
+};
