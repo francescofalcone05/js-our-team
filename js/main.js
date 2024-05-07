@@ -42,21 +42,25 @@ const container = document.getElementById('cont');
 
 
 
-
-
-
 for (let i = 0; i < ourTeam.length; i++) {
 
     let membro = ourTeam[i]
-
-    //let singleCard = document.createElement('div');
-    ///singleCard.classList.add('card');
-    //singleCard.append(`<img src="./img/${membro.immagine}" alt=""></img><p>Nome e cognome:${membro.nome}</p><p>Ruolo:${membro.ruolo}</p>`)
-    // container.append(singleCard)
-
-    container.innerHTML += `<div class="card"><img src="./img/${membro.immagine}" alt=""></img><p>Nome e cognome:${membro.nome}</p><p>Ruolo:${membro.ruolo}</p></div>`
-    //container.append(`${singleCard}`)
-    //container.innerHTML += `${singleCard}`
     
 
+    container.innerHTML += `<div class="card">
+                            <img src="./img/${membro.immagine}" alt=""></img>
+                            <p>Nome e cognome: ${membro.nome}</p>
+                            <p>Ruolo: ${membro.ruolo}</p>
+                            </div>`
+
 };
+
+
+
+
+////altra soluzione
+// let singleCard = document.createElement('div');
+// singleCard.classList.add('card');
+// singleCard.innerHTML = `<img src="./img/${membro.immagine}" alt=""></img><p>Nome e cognome:${membro.nome}</p><p>Ruolo:${membro.ruolo}</p>`
+//container.innerHTML += singleCard
+
